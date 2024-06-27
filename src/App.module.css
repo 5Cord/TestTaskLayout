@@ -1,0 +1,141 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    padding: 15px 22px;
+    width: 699px;
+    height: 61px;
+    background-color: #3579F5;
+    border-radius: 10px;
+}
+
+.frame__data {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin-right: 68px;
+    gap: 4px;
+}
+
+.frame__data_miniTitle {
+    background-color: #2364DB;
+    border-radius: 40px;
+    width: 76px;
+    height: 18px;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame__data_progress {
+    font-weight: bold;
+    font-size: 15px;
+    width: 389px;
+}
+
+button {
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    color: #4777ED;
+    cursor: pointer;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+
+    font-size: 14px;
+}
+
+.frame__data_progression {
+    font-size: 12px;
+}
+
+.progressCircle {
+    position: relative;
+    margin-right: 16px;
+    color: white;
+}
+
+.progressCircle svg {
+    transform: rotate(-90deg);
+}
+
+.progressCircle circle {
+    fill: none;
+    stroke-width: 2;
+}
+
+.progressBg {
+    stroke: white;
+    opacity: 0.2;
+}
+
+.progressBar {
+    stroke: white;
+    stroke-dasharray: 220;
+    stroke-dashoffset: calc(220 - (220 * var(--progress)) / 100);
+    transition: stroke-dashoffset 0.5s;
+}
+
+.progressText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+/* Примеры различных состояний прогресса */
+.progress0 {
+    --progress: 5;
+}
+
+.progress1 {
+    --progress: 14.3;
+}
+
+.progress2 {
+    --progress: 28.6;
+}
+
+.progress3 {
+    --progress: 42.9;
+}
+
+.progress4 {
+    --progress: 57.2;
+}
+
+.progress5 {
+    --progress: 71.5;
+}
+
+.progress6 {
+    --progress: 85.8;
+}
+
+.progress7 {
+    --progress: 100;
+}
+
+.frame__data__top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+}
